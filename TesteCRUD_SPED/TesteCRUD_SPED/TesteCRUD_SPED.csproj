@@ -151,6 +151,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ParticipanteController.cs" />
     <Compile Include="Repositories\CrudSpedContext.cs" />
     <Compile Include="Entities\Estado.cs" />
     <Compile Include="Entities\Municipio.cs" />
@@ -198,6 +199,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MenuSuperior.cshtml" />
+    <Content Include="Views\Participante\Form.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
