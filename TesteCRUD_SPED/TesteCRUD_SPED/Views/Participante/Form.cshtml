@@ -1,7 +1,52 @@
-﻿
-@{
-    ViewBag.Title = "Form";
-}
+﻿@model TesteCRUD_SPED.Models.ParticipanteModel
 
-<h2>Form</h2>
+@using (Html.BeginForm("Add", "Participante", FormMethod.Post))
+{
+    @Html.LabelFor(p => p.Cod_Part, "Codigo do Participante")
+    @Html.TextBoxFor(P => P.Cod_Part, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.Nome, "Nome")
+    @Html.TextBoxFor(P => P.Nome, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.Pais, "País")
+    @Html.TextBoxFor(P => P.Pais, new { @class = "form-control" })
+
+    <!--Criar Tipo de Pessoa-->
+    @Html.LabelFor(p => p.CPF, "CPF")
+    @Html.TextBoxFor(P => P.CPF, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.CNPJ, "CNPJ")
+    @Html.TextBoxFor(P => P.CNPJ, new { @class = "form-control" })
+
+    <!--Criar Campo Estado-->
+
+
+    @Html.LabelFor(p => p.IE, "Inscrição Estadual")
+    @Html.TextBoxFor(P => P.IE, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.IsentoIE, "Isento")
+    @Html.CheckBoxFor(p => p.IsentoIE, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.SUFRAMA, "SUFRAMA")
+    @Html.TextBoxFor(P => P.SUFRAMA, new { @class = "form-control" })
+
+
+    @Html.LabelFor(p => p.Municipio.COD_MUNICIPIO, "Municipio")
+    @Html.TextBoxFor(P => P.Municipio, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.Bairro, "Bairro")
+    @Html.TextBoxFor(P => P.Bairro, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.Endereco, "Endereco")
+    @Html.TextBoxFor(P => P.Endereco, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.Numero, "Numero")
+    @Html.TextBoxFor(P => P.Numero, new { @class = "form-control" })
+
+    @Html.LabelFor(p => p.Complemento, "Complemento")
+    @Html.TextBoxFor(P => P.Complemento, new { @class = "form-control" })
+
+    <input type="submit" value="Salvar" />
+
+}
 

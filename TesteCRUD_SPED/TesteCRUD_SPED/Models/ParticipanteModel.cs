@@ -30,13 +30,13 @@ namespace TesteCRUD_SPED.Models
         public string SUFRAMA { get; set; }
 
         [Required]
-        public string Endereço { get; set; }
+        public string Endereco { get; set; }
 
         public int Numero { get; set; }
 
         public string Complemento { get; set; }
 
-        public string Bairo { get; set; }
+        public string Bairro { get; set; }
 
         public bool IsentoIE { get; set; }
 
