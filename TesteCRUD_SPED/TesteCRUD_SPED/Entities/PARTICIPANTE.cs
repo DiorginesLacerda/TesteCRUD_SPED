@@ -53,6 +53,6 @@ namespace TesteCRUD_SPED.Entities
         [StringLength(60)]
         public string BAIRRO { get; set; }
 
-        public virtual Pais PAISES_IBGE { get; set; }
+        public virtual Pais Pais { get; set; }
     }
 }

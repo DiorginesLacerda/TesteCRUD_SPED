@@ -47,7 +47,7 @@ namespace TesteCRUD_SPED.Entities
 
             modelBuilder.Entity<Pais>()
                 .HasMany(e => e.PARTICIPANTEs)
-                .WithRequired(e => e.PAISES_IBGE)
+                .WithRequired(e => e.Pais)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Participante>()
