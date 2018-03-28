@@ -67,7 +67,7 @@ namespace TesteCRUD_SPED.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return View(this.participanteRepository.GetAll());
         }
     }
 }

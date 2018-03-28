@@ -5,7 +5,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using TesteCRUD_SPED.Entities;
-using TesteCRUD_SPED.Validations;
 
 namespace TesteCRUD_SPED.Models
 {

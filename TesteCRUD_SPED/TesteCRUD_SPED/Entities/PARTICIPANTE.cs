@@ -11,7 +11,7 @@ namespace TesteCRUD_SPED.Entities
     {
         [Required]
         [StringLength(4)]
-        public string REG { get { return "0150"; }  }
+        public string REG { get { return "0150"; } set { } }
 
         [Key]
         [StringLength(60)]
