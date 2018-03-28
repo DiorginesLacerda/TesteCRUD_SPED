@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DocsBr;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -24,7 +25,6 @@ namespace TesteCRUD_SPED.Models
         public TipoPessoaModel TipoPessoa { get; set; }
 
         private string cnpj;
-        
         public string CNPJ
         {
             get
@@ -33,10 +33,15 @@ namespace TesteCRUD_SPED.Models
             }
             set
             {
-                if(ValidaCNPJ.IsCnpj(value) && TipoPessoa.Equals("Juridica"))
-                    this.cnpj = value;
-                else
-                    throw new Exception("Valor De CNPJ Inválido");
+                if (TipoPessoa.Equals("Juridica"))
+                {
+                    CNPJ c = value;
+                    if (c.IsValid())
+                        this.cnpj = value;
+                    else
+                        throw new Exception("Valor De CNPJ Inválido");
+                }
+                
             }
         }
         private string cpf;
@@ -48,16 +53,36 @@ namespace TesteCRUD_SPED.Models
             }
             set
             {
-                if (ValidaCPF.IsCpf(value) && TipoPessoa.Equals("Fisica"))
-                    this.cnpj = value;
-                else
-                    throw new Exception("Valor De CPF Inválido");
+                if (TipoPessoa.Equals("Fisica"))
+                {
+                    CPF c = value;
+                    if (c.IsValid())
+                        this.cpf = value;
+                    else
+                        throw new Exception("Valor De CPF Inválido");
+                }
+                else this.cpf = null;
+                
             }
         }
 
-        public string IE { get; set; }
+        private string ie;
+        public string IE
+        {
+            get { return this.ie; }
+            set
+            {
+                if (!IsentoIE)
+                {
+                    IE i = new IE(value, Estado.COD_ESTADO);
+                    if (i.IsValid())
+                        this.ie = value;
+                }
+            }
+        }
 
-        public MUNICIPIOS_IBGE Municipio { get; set; }
+        public MUNICIPIOS_IBGE Municipio
+        { get; set; }
 
         public string SUFRAMA { get; set; }
 

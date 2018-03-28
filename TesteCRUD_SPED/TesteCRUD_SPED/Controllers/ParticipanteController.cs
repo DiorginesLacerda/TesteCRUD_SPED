@@ -35,7 +35,34 @@ namespace TesteCRUD_SPED.Controllers
 
         public ActionResult Add(ParticipanteModel model)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                participanteRepository.Add(
+                    new PARTICIPANTE
+                    {
+                        COD_PART = model.Cod_Part.ToString(),
+                        NOME = model.Nome,
+                        COD_PAIS = model.Pais.COD_PAIS,
+                        CNPJ = model.CNPJ,
+                        CPF = model.CPF,
+                        IE = model.IE,
+                        COD_MUN = model.Municipio.COD_MUNICIPIO,
+                        SUFRAMA = model.SUFRAMA,
+                        END = model.Endereco,
+                        NUM = model.Numero.ToString(),
+                        COMPL = model.Complemento,
+                        BAIRRO = model.Bairro
+                    });
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Paises = paisRepository.GetAll().OrderBy(p => p.NOME_PAIS);
+                ViewBag.Estados = estadoRepository.GetAll().OrderBy(e => e.SIGLA_ESTADO);
+                ViewBag.Municipios = municipioRepository.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
+                return View("Form", model);
+            }
+            
         }
 
         public ActionResult Index()
