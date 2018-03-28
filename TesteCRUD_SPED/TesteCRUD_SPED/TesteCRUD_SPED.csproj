@@ -153,6 +153,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ParticipanteController.cs" />
     <Compile Include="Models\ParticipanteModel.cs" />
+    <Compile Include="Models\TipoPessoaModel.cs" />
     <Compile Include="Repositories\CrudSpedContext.cs" />
     <Compile Include="Entities\Estado.cs" />
     <Compile Include="Entities\Municipio.cs" />

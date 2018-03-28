@@ -11,15 +11,17 @@
     @Html.LabelFor(p => p.Pais, "País")
     @Html.TextBoxFor(P => P.Pais, new { @class = "form-control" })
 
-    <!--Criar Tipo de Pessoa-->
+    @Html.LabelFor(p => p.TipoPessoa,"Pessoa Fisica / Juridica")
+    @Html.EnumDropDownListFor(p => p.TipoPessoa, new { @class = "form-control" })
+
     @Html.LabelFor(p => p.CPF, "CPF")
     @Html.TextBoxFor(P => P.CPF, new { @class = "form-control" })
 
     @Html.LabelFor(p => p.CNPJ, "CNPJ")
     @Html.TextBoxFor(P => P.CNPJ, new { @class = "form-control" })
 
-    <!--Criar Campo Estado-->
-
+    @Html.LabelFor(p=>p.Estado.COD_ESTADO,"Estado")
+    @Html.LabelFor(p => p.Estado.COD_ESTADO, new {@class="form-control" })
 
     @Html.LabelFor(p => p.IE, "Inscrição Estadual")
     @Html.TextBoxFor(P => P.IE, new { @class = "form-control" })
@@ -32,7 +34,7 @@
 
 
     @Html.LabelFor(p => p.Municipio.COD_MUNICIPIO, "Municipio")
-    @Html.TextBoxFor(P => P.Municipio, new { @class = "form-control" })
+    @Html.TextBoxFor(P => P.Municipio.COD_MUNICIPIO, new { @class = "form-control" })
 
     @Html.LabelFor(p => p.Bairro, "Bairro")
     @Html.TextBoxFor(P => P.Bairro, new { @class = "form-control" })

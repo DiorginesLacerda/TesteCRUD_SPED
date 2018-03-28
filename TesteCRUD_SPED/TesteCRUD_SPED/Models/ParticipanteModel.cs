@@ -18,6 +18,9 @@ namespace TesteCRUD_SPED.Models
         [Required]
         public Pais Pais { get; set; }
 
+        public Estado Estado { get; set; }
+
+        public TipoPessoaModel TipoPessoa { get; set; }
 
         public string CNPJ { get; set; }
 
