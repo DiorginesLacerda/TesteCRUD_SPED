@@ -13,6 +13,11 @@ namespace TesteCRUD_SPED.Controllers
             return View();
         }
 
-        
+        public ActionResult ScriptSQL()
+        {
+            
+            return View();
+        }
+
     }
 }
