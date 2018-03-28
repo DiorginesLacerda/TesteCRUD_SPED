@@ -1,9 +1,10 @@
-namespace TesteCRUD_SPED.Entities
+namespace TesteCRUD_SPED.Repositories
 {
     using System;
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using TesteCRUD_SPED.Entities;
 
     public partial class CrudSpedContext : DbContext
     {
