@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_TESTE_SPEDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ESTADOS_IBGE">
+    <Key>
+      <PropertyRef Name="COD_ESTADO" />
+    </Key>
+    <Property Name="COD_ESTADO" Type="int" Nullable="false" />
+    <Property Name="SIGLA_ESTADO" Type="varchar" MaxLength="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MUNICIPIOS_IBGE">
+    <Key>
+      <PropertyRef Name="COD_MUNICIPIO" />
+    </Key>
+    <Property Name="COD_MUNICIPIO" Type="char" MaxLength="7" Nullable="false" />
+    <Property Name="NOME_MUNICIPIO" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="COD_ESTADO" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PAISES_IBGE">
+    <Key>
+      <PropertyRef Name="COD_PAIS" />
+    </Key>
+    <Property Name="COD_PAIS" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="NOME_PAIS" Type="varchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PARTICIPANTE">
+    <Key>
+      <PropertyRef Name="COD_PART" />
+    </Key>
+    <Property Name="REG" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="COD_PART" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="NOME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="COD_PAIS" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="CNPJ" Type="char" MaxLength="14" />
+    <Property Name="CPF" Type="char" MaxLength="11" />
+    <Property Name="IE" Type="varchar" MaxLength="14" />
+    <Property Name="COD_MUN" Type="char" MaxLength="7" />
+    <Property Name="SUFRAMA" Type="char" MaxLength="9" />
+    <Property Name="END" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="NUM" Type="varchar" MaxLength="10" />
+    <Property Name="COMPL" Type="varchar" MaxLength="60" />
+    <Property Name="BAIRRO" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <Association Name="FK_ESTADO">
+    <End Role="ESTADOS_IBGE" Type="Self.ESTADOS_IBGE" Multiplicity="1" />
+    <End Role="MUNICIPIOS_IBGE" Type="Self.MUNICIPIOS_IBGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS_IBGE">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="MUNICIPIOS_IBGE">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAIS">
+    <End Role="PAISES_IBGE" Type="Self.PAISES_IBGE" Multiplicity="1" />
+    <End Role="PARTICIPANTE" Type="Self.PARTICIPANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAISES_IBGE">
+        <PropertyRef Name="COD_PAIS" />
+      </Principal>
+      <Dependent Role="PARTICIPANTE">
+        <PropertyRef Name="COD_PAIS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_TESTE_SPEDModelStoreContainer">
+    <EntitySet Name="ESTADOS_IBGE" EntityType="Self.ESTADOS_IBGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MUNICIPIOS_IBGE" EntityType="Self.MUNICIPIOS_IBGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PAISES_IBGE" EntityType="Self.PAISES_IBGE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PARTICIPANTE" EntityType="Self.PARTICIPANTE" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ESTADO" Association="Self.FK_ESTADO">
+      <End Role="ESTADOS_IBGE" EntitySet="ESTADOS_IBGE" />
+      <End Role="MUNICIPIOS_IBGE" EntitySet="MUNICIPIOS_IBGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAIS" Association="Self.FK_PAIS">
+      <End Role="PAISES_IBGE" EntitySet="PAISES_IBGE" />
+      <End Role="PARTICIPANTE" EntitySet="PARTICIPANTE" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

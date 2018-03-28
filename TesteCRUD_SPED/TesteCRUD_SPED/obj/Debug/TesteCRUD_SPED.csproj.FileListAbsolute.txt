@@ -1,0 +1,205 @@
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\ApplicationInsights.config
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\TesteCRUD_SPED.dll.config
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\TesteCRUD_SPED.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\TesteCRUD_SPED.pdb
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csc.exe
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csc.exe.config
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csc.rsp
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csi.exe
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csi.exe.config
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csi.rsp
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.AppContext.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Console.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.Compression.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.Pipes.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Claims.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Threading.Thread.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.ValueTuple.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.XPath.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\vbc.exe
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\vbc.exe.config
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\vbc.rsp
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\VBCSCompiler.exe
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Antlr3.Runtime.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.SqlServer.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Web.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.ApplicationInsights.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Newtonsoft.Json.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Helpers.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Mvc.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Optimization.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Razor.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Deployment.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Razor.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\WebGrease.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.SqlServer.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Helpers.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Mvc.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Optimization.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Razor.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Deployment.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Razor.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Antlr3.Runtime.pdb
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Newtonsoft.Json.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.ApplicationInsights.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Web.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csprojResolveAssemblyReference.cache
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csproj.CoreCompileInputs.cache
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csproj.CopyComplete
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.pdb
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Common.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Mvc.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\WebActivatorEx.dll
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Common.xml
+C:\Users\diorg\OneDrive\Área de Trabalho\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Mvc.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csprojResolveAssemblyReference.cache
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csproj.CoreCompileInputs.cache
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.pdb
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\ApplicationInsights.config
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\TesteCRUD_SPED.dll.config
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\TesteCRUD_SPED.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\TesteCRUD_SPED.pdb
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csc.exe
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csc.exe.config
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csc.rsp
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csi.exe
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csi.exe.config
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\csi.rsp
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.AppContext.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Collections.Immutable.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Console.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Diagnostics.Process.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.Compression.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.FileSystem.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.IO.Pipes.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Reflection.Metadata.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.AccessControl.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Claims.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Threading.Thread.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.ValueTuple.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.XPath.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\vbc.exe
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\vbc.exe.config
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\vbc.rsp
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\VBCSCompiler.exe
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\roslyn\VBCSCompiler.exe.config
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Antlr3.Runtime.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\DocsBr.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.SqlServer.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.DependencyCollector.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Web.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.WindowsServer.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.ApplicationInsights.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.Web.Infrastructure.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Newtonsoft.Json.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Common.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Mvc.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Helpers.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Mvc.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Optimization.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Razor.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Deployment.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Razor.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\WebActivatorEx.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\WebGrease.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\EntityFramework.SqlServer.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Common.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Ninject.Web.Mvc.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Helpers.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Mvc.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Optimization.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Razor.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Deployment.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.WebPages.Razor.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Antlr3.Runtime.pdb
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Newtonsoft.Json.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.ApplicationInsights.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.DependencyCollector.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.WindowsServer.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Web.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csproj.CopyComplete

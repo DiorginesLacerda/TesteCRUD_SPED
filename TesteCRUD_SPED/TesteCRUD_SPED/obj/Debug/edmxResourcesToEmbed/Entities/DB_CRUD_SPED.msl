@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB_TESTE_SPEDModelStoreContainer" CdmEntityContainer="DB_TESTE_SPEDEntities">
+    <EntitySetMapping Name="ESTADOS_IBGE">
+      <EntityTypeMapping TypeName="DB_TESTE_SPEDModel.ESTADOS_IBGE">
+        <MappingFragment StoreEntitySet="ESTADOS_IBGE">
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+          <ScalarProperty Name="SIGLA_ESTADO" ColumnName="SIGLA_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MUNICIPIOS_IBGE">
+      <EntityTypeMapping TypeName="DB_TESTE_SPEDModel.MUNICIPIOS_IBGE">
+        <MappingFragment StoreEntitySet="MUNICIPIOS_IBGE">
+          <ScalarProperty Name="COD_MUNICIPIO" ColumnName="COD_MUNICIPIO" />
+          <ScalarProperty Name="NOME_MUNICIPIO" ColumnName="NOME_MUNICIPIO" />
+          <ScalarProperty Name="COD_ESTADO" ColumnName="COD_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PAISES_IBGE">
+      <EntityTypeMapping TypeName="DB_TESTE_SPEDModel.PAISES_IBGE">
+        <MappingFragment StoreEntitySet="PAISES_IBGE">
+          <ScalarProperty Name="COD_PAIS" ColumnName="COD_PAIS" />
+          <ScalarProperty Name="NOME_PAIS" ColumnName="NOME_PAIS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARTICIPANTE">
+      <EntityTypeMapping TypeName="DB_TESTE_SPEDModel.PARTICIPANTE">
+        <MappingFragment StoreEntitySet="PARTICIPANTE">
+          <ScalarProperty Name="REG" ColumnName="REG" />
+          <ScalarProperty Name="COD_PART" ColumnName="COD_PART" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="COD_PAIS" ColumnName="COD_PAIS" />
+          <ScalarProperty Name="CNPJ" ColumnName="CNPJ" />
+          <ScalarProperty Name="CPF" ColumnName="CPF" />
+          <ScalarProperty Name="IE" ColumnName="IE" />
+          <ScalarProperty Name="COD_MUN" ColumnName="COD_MUN" />
+          <ScalarProperty Name="SUFRAMA" ColumnName="SUFRAMA" />
+          <ScalarProperty Name="END" ColumnName="END" />
+          <ScalarProperty Name="NUM" ColumnName="NUM" />
+          <ScalarProperty Name="COMPL" ColumnName="COMPL" />
+          <ScalarProperty Name="BAIRRO" ColumnName="BAIRRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

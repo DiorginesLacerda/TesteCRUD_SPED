@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DB_TESTE_SPEDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ESTADOS_IBGE">
+    <Key>
+      <PropertyRef Name="COD_ESTADO" />
+    </Key>
+    <Property Name="COD_ESTADO" Type="Int32" Nullable="false" />
+    <Property Name="SIGLA_ESTADO" Type="String" MaxLength="2" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MUNICIPIOS_IBGE" Relationship="Self.FK_ESTADO" FromRole="ESTADOS_IBGE" ToRole="MUNICIPIOS_IBGE" />
+  </EntityType>
+  <EntityType Name="MUNICIPIOS_IBGE">
+    <Key>
+      <PropertyRef Name="COD_MUNICIPIO" />
+    </Key>
+    <Property Name="COD_MUNICIPIO" Type="String" MaxLength="7" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="NOME_MUNICIPIO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COD_ESTADO" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ESTADOS_IBGE" Relationship="Self.FK_ESTADO" FromRole="MUNICIPIOS_IBGE" ToRole="ESTADOS_IBGE" />
+  </EntityType>
+  <EntityType Name="PAISES_IBGE">
+    <Key>
+      <PropertyRef Name="COD_PAIS" />
+    </Key>
+    <Property Name="COD_PAIS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOME_PAIS" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="PARTICIPANTE" Relationship="Self.FK_PAIS" FromRole="PAISES_IBGE" ToRole="PARTICIPANTE" />
+  </EntityType>
+  <EntityType Name="PARTICIPANTE">
+    <Key>
+      <PropertyRef Name="COD_PART" />
+    </Key>
+    <Property Name="REG" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COD_PART" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NOME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="COD_PAIS" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CNPJ" Type="String" MaxLength="14" FixedLength="true" Unicode="false" />
+    <Property Name="CPF" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="IE" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="COD_MUN" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="SUFRAMA" Type="String" MaxLength="9" FixedLength="true" Unicode="false" />
+    <Property Name="END" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NUM" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="COMPL" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="BAIRRO" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PAISES_IBGE" Relationship="Self.FK_PAIS" FromRole="PARTICIPANTE" ToRole="PAISES_IBGE" />
+  </EntityType>
+  <Association Name="FK_ESTADO">
+    <End Role="ESTADOS_IBGE" Type="Self.ESTADOS_IBGE" Multiplicity="1" />
+    <End Role="MUNICIPIOS_IBGE" Type="Self.MUNICIPIOS_IBGE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ESTADOS_IBGE">
+        <PropertyRef Name="COD_ESTADO" />
+      </Principal>
+      <Dependent Role="MUNICIPIOS_IBGE">
+        <PropertyRef Name="COD_ESTADO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PAIS">
+    <End Role="PAISES_IBGE" Type="Self.PAISES_IBGE" Multiplicity="1" />
+    <End Role="PARTICIPANTE" Type="Self.PARTICIPANTE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PAISES_IBGE">
+        <PropertyRef Name="COD_PAIS" />
+      </Principal>
+      <Dependent Role="PARTICIPANTE">
+        <PropertyRef Name="COD_PAIS" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DB_TESTE_SPEDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ESTADOS_IBGE" EntityType="Self.ESTADOS_IBGE" />
+    <EntitySet Name="MUNICIPIOS_IBGE" EntityType="Self.MUNICIPIOS_IBGE" />
+    <EntitySet Name="PAISES_IBGE" EntityType="Self.PAISES_IBGE" />
+    <EntitySet Name="PARTICIPANTE" EntityType="Self.PARTICIPANTE" />
+    <AssociationSet Name="FK_ESTADO" Association="Self.FK_ESTADO">
+      <End Role="ESTADOS_IBGE" EntitySet="ESTADOS_IBGE" />
+      <End Role="MUNICIPIOS_IBGE" EntitySet="MUNICIPIOS_IBGE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PAIS" Association="Self.FK_PAIS">
+      <End Role="PAISES_IBGE" EntitySet="PAISES_IBGE" />
+      <End Role="PARTICIPANTE" EntitySet="PARTICIPANTE" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
