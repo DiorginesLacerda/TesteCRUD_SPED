@@ -43,4 +43,10 @@ Campo 11 = NUM
 Campo 12 = COMPL
 Campo 13 = BAIRRO
 
+Implementações que ainda necessitam ser feitas:
+- Aplicação de máscaras nos campos do Formulário
+- Melhorias no CSS
+- Funções no JavaScript para Apenas abilitasse os campos respectivos aos código de Pais Brasil apenas quando ele selecionado
+- funçoes no JavaScript que permitissem apenas a inserção do CPF ou CNPJ
+
 
