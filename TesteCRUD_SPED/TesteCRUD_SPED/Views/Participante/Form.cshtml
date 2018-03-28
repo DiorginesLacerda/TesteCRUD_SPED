@@ -13,8 +13,6 @@
         new SelectList(ViewBag.Paises,"COD_PAIS", "NOME_PAIS")
         , new { @class = "form-control" })
 
-    
-
     @Html.LabelFor(p => p.TipoPessoa,"Pessoa Fisica / Juridica")
     @Html.EnumDropDownListFor(p => p.TipoPessoa, new { @class = "form-control" })
 
@@ -25,7 +23,10 @@
     @Html.TextBoxFor(P => P.CNPJ, new { @class = "form-control" })
 
     @Html.LabelFor(p=>p.Estado.COD_ESTADO,"Estado")
-    @Html.LabelFor(p => p.Estado.COD_ESTADO, new {@class="form-control" })
+    @Html.DropDownListFor(p=>p.Estado.COD_ESTADO,
+        new SelectList(ViewBag.Estados, "COD_ESTADO", "SIGLA_ESTADO"),
+        new { @class = "form-control" })
+    
 
     @Html.LabelFor(p => p.IE, "Inscrição Estadual")
     @Html.TextBoxFor(P => P.IE, new { @class = "form-control" })
@@ -33,12 +34,17 @@
     @Html.LabelFor(p => p.IsentoIE, "Isento")
     @Html.CheckBoxFor(p => p.IsentoIE, new { @class = "form-control" })
 
+
     @Html.LabelFor(p => p.SUFRAMA, "SUFRAMA")
     @Html.TextBoxFor(P => P.SUFRAMA, new { @class = "form-control" })
 
 
+
     @Html.LabelFor(p => p.Municipio.COD_MUNICIPIO, "Municipio")
-    @Html.TextBoxFor(P => P.Municipio.COD_MUNICIPIO, new { @class = "form-control" })
+    @Html.DropDownListFor(p=>p.Municipio.COD_MUNICIPIO,
+        new SelectList(ViewBag.Municipios,
+            "COD_MUNICIPIO", "NOME_MUNICIPIO"),
+        new { @class = "form-control" })
 
     @Html.LabelFor(p => p.Bairro, "Bairro")
     @Html.TextBoxFor(P => P.Bairro, new { @class = "form-control" })

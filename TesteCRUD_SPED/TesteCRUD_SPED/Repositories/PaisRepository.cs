@@ -15,7 +15,7 @@ namespace TesteCRUD_SPED.Repositories
             this.context = context;
         }
 
-        public IList<PAISES_IBGE> getAll()
+        public IList<PAISES_IBGE> GetAll()
         {
             var lista = context.Paises.ToList();
             return lista;

@@ -4,12 +4,13 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using TesteCRUD_SPED.Entities;
+using TesteCRUD_SPED.Validations;
 
 namespace TesteCRUD_SPED.Models
 {
     public class ParticipanteModel
     {
-        
+        [Required]
         public int Cod_Part { get; set; }
 
         [Required]
@@ -22,9 +23,37 @@ namespace TesteCRUD_SPED.Models
 
         public TipoPessoaModel TipoPessoa { get; set; }
 
-        public string CNPJ { get; set; }
-
-        public string CPF { get; set; }
+        private string cnpj;
+        
+        public string CNPJ
+        {
+            get
+            {
+                return this.cnpj;
+            }
+            set
+            {
+                if(ValidaCNPJ.IsCnpj(value) && TipoPessoa.Equals("Juridica"))
+                    this.cnpj = value;
+                else
+                    throw new Exception("Valor De CNPJ Inválido");
+            }
+        }
+        private string cpf;
+        public string CPF
+        {
+            get
+            {
+                return this.cpf;
+            }
+            set
+            {
+                if (ValidaCPF.IsCpf(value) && TipoPessoa.Equals("Fisica"))
+                    this.cnpj = value;
+                else
+                    throw new Exception("Valor De CPF Inválido");
+            }
+        }
 
         public string IE { get; set; }
 
