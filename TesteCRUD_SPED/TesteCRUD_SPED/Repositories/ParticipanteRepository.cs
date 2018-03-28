@@ -8,25 +8,25 @@ namespace TesteCRUD_SPED.Repositories
 {
     public class ParticipanteRepository
     {
-        private CrudSpedContext context;
+        private dbContext context;
 
-        public ParticipanteRepository(CrudSpedContext context)
+        public ParticipanteRepository(dbContext context)
         {
             this.context = context;
         }
 
-        public void Add(Participante participante)
+        public void Add(PARTICIPANTE participante)
         {
             context.Participantes.Add(participante);
             context.SaveChanges();
         }
 
-        public IList<Participante> GetAll()
+        public IList<PARTICIPANTE> GetAll()
         {
-            return context.Participantes.ToList();
+            return context.Participantes.ToList(); ;
         }
 
-        public Participante FindById(string cod)
+        public PARTICIPANTE FindById(string cod)
         {
             return context.Participantes.Where(p => p.COD_PART.Equals(cod)).First();
         }

@@ -7,7 +7,7 @@ namespace TesteCRUD_SPED.Entities
     using System.Data.Entity.Spatial;
 
     [Table("PARTICIPANTE")]
-    public partial class Participante
+    public partial class PARTICIPANTE
     {
         [Required]
         [StringLength(4)]
@@ -53,6 +53,6 @@ namespace TesteCRUD_SPED.Entities
         [StringLength(60)]
         public string BAIRRO { get; set; }
 
-        public virtual Pais Pais { get; set; }
+        public virtual PAISES_IBGE PAISES_IBGE { get; set; }
     }
 }

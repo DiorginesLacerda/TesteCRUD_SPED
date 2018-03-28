@@ -6,7 +6,7 @@ namespace TesteCRUD_SPED.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Municipio
+    public partial class MUNICIPIOS_IBGE
     {
         [Key]
         [StringLength(7)]
@@ -18,6 +18,6 @@ namespace TesteCRUD_SPED.Entities
 
         public int COD_ESTADO { get; set; }
 
-        public virtual Estado ESTADOS_IBGE { get; set; }
+        public virtual ESTADOS_IBGE ESTADOS_IBGE { get; set; }
     }
 }

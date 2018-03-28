@@ -8,8 +8,12 @@
     @Html.LabelFor(p => p.Nome, "Nome")
     @Html.TextBoxFor(P => P.Nome, new { @class = "form-control" })
 
-    @Html.LabelFor(p => p.Pais, "País")
-    @Html.TextBoxFor(P => P.Pais, new { @class = "form-control" })
+    @Html.LabelFor(p => p.Pais.COD_PAIS, "País")
+    @Html.DropDownListFor(p =>p.Pais.COD_PAIS,
+        new SelectList(ViewBag.Paises,"COD_PAIS", "NOME_PAIS")
+        , new { @class = "form-control" })
+
+    
 
     @Html.LabelFor(p => p.TipoPessoa,"Pessoa Fisica / Juridica")
     @Html.EnumDropDownListFor(p => p.TipoPessoa, new { @class = "form-control" })

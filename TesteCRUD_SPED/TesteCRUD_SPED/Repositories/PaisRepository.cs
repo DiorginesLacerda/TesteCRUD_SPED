@@ -8,16 +8,17 @@ namespace TesteCRUD_SPED.Repositories
 {
     public class PaisRepository
     {
-        private CrudSpedContext context;
+        private dbContext context;
 
-        public PaisRepository(CrudSpedContext context)
+        public PaisRepository(dbContext context)
         {
             this.context = context;
         }
 
-        public IList<Pais> getAll()
+        public IList<PAISES_IBGE> getAll()
         {
-            return context.Paises.ToList();
+            var lista = context.Paises.ToList();
+            return lista;
         }
     }
 }

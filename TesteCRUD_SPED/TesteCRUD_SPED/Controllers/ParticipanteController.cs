@@ -4,25 +4,29 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TesteCRUD_SPED.Entities;
+using TesteCRUD_SPED.Repositories;
 
 namespace TesteCRUD_SPED.Controllers
 {
     public class ParticipanteController : Controller
     {
-        private Pais pais;
-        private Estado estado;
-        private Municipio municipio;
+        private PaisRepository paisRepository;
+        private EstadoRepository estadoRepository;
+        private MunicipioRepository municipioRepository;
+        private ParticipanteRepository participanteRepository;
 
-        public ParticipanteController(Pais pais,Estado estado, Municipio municipio)
+        public ParticipanteController(PaisRepository paisRepository, EstadoRepository estadoRepository,
+            MunicipioRepository municipioRepository, ParticipanteRepository participanteRepository)
         {
-            this.pais = pais;
-            this.estado = estado;
-            this.municipio = municipio;
+            this.paisRepository = paisRepository;
+            this.estadoRepository = estadoRepository;
+            this.municipioRepository = municipioRepository;
+            this.participanteRepository = participanteRepository;
         }
 
         public ActionResult Form()
         {
-           // ViewBag.Paises
+            ViewBag.Paises = paisRepository.getAll();
             return View();
         }
 

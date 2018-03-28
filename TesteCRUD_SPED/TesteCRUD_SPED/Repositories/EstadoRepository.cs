@@ -8,14 +8,14 @@ namespace TesteCRUD_SPED.Repositories
 {
     public class EstadoRepository
     {
-        private CrudSpedContext context;
+        private dbContext context;
 
-        public EstadoRepository(CrudSpedContext context)
+        public EstadoRepository(dbContext context)
         {
             this.context = context;
         }
 
-        public IList<Estado> GetAll()
+        public IList<ESTADOS_IBGE> GetAll()
         {
             return this.context.Estados.ToList();
         }

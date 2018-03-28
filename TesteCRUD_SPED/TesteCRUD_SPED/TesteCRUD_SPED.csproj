@@ -165,13 +165,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ParticipanteController.cs" />
+    <Compile Include="Entities\dbContext.cs" />
+    <Compile Include="Entities\ESTADOS_IBGE.cs" />
+    <Compile Include="Entities\MUNICIPIOS_IBGE.cs" />
+    <Compile Include="Entities\PAISES_IBGE.cs" />
+    <Compile Include="Entities\PARTICIPANTE.cs" />
     <Compile Include="Models\ParticipanteModel.cs" />
     <Compile Include="Models\TipoPessoaModel.cs" />
-    <Compile Include="Repositories\CrudSpedContext.cs" />
-    <Compile Include="Entities\Estado.cs" />
-    <Compile Include="Entities\Municipio.cs" />
-    <Compile Include="Entities\Pais.cs" />
-    <Compile Include="Entities\Participante.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +182,10 @@
     <Compile Include="Repositories\ParticipanteRepository.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\LocalDatabase.mdf" />
+    <Content Include="App_Data\LocalDatabase_log.ldf">
+      <DependentUpon>LocalDatabase.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -219,9 +223,7 @@
     <Content Include="Views\Shared\_MenuSuperior.cshtml" />
     <Content Include="Views\Participante\Form.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>

@@ -16,9 +16,9 @@ namespace TesteCRUD_SPED.Models
         public string Nome { get; set; }
 
         [Required]
-        public Pais Pais { get; set; }
+        public PAISES_IBGE Pais { get; set; }
 
-        public Estado Estado { get; set; }
+        public ESTADOS_IBGE Estado { get; set; }
 
         public TipoPessoaModel TipoPessoa { get; set; }
 
@@ -28,7 +28,7 @@ namespace TesteCRUD_SPED.Models
 
         public string IE { get; set; }
 
-        public Municipio Municipio { get; set; }
+        public MUNICIPIOS_IBGE Municipio { get; set; }
 
         public string SUFRAMA { get; set; }
 

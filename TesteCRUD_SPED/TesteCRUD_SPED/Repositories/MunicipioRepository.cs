@@ -8,14 +8,14 @@ namespace TesteCRUD_SPED.Repositories
 {
     public class MunicipioRepository
     {
-        private CrudSpedContext context;
+        private dbContext context;
 
-        public MunicipioRepository(CrudSpedContext context)
+        public MunicipioRepository(dbContext context)
         {
             this.context = context;
         }
 
-        public IList<Municipio> GetAll()
+        public IList<MUNICIPIOS_IBGE> GetAll()
         {
             return this.context.Municipios.ToList();
         }
