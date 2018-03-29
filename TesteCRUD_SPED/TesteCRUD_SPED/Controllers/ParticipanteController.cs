@@ -36,8 +36,19 @@ namespace TesteCRUD_SPED.Controllers
         {
             if (ModelState.IsValid)
             {
-                participanteService.Add(model);
-                return RedirectToAction("Index");
+                try
+                {
+                    participanteService.Add(model);
+                    return RedirectToAction("Index");
+                }
+                catch(Exception e)
+                {
+                    
+                    SetViewBags();
+                    ModelState.AddModelError("model.Invalida", e);
+                    return View("Form", model);
+                }
+                
             }
             else
             {

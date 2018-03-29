@@ -5,7 +5,6 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using TesteCRUD_SPED.Entities;
-using TesteCRUD_SPED.Validations;
 
 namespace TesteCRUD_SPED.Models
 {
@@ -13,72 +12,30 @@ namespace TesteCRUD_SPED.Models
     {
         [Required(ErrorMessage ="Necessário Informar um Código para o Participante")]
         [MaxLength(60)]
-        public int Cod_Part { get; set; }
+        public string Cod_Part { get; set; }
 
-        [Required(ErrorMessage = "Necessário Informar o Nome para o Participante")]
+        [Required(ErrorMessage = "Necessário Informar o Nome")]
         [MaxLength(100)]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Necessário Informar o Pais")]
         public PAISES_IBGE Pais { get; set; }
 
         public ESTADOS_IBGE Estado { get; set; }
 
-        public static TipoPessoaModel tipoPessoa;
-        public TipoPessoaModel TipoPessoa
-        {
-            get { return tipoPessoa; }
-            set { tipoPessoa = value; }
-        }
-
-        private string cnpj;
+        public TipoPessoaModel TipoPessoa { get; set; }
 
         [StringLength(14,ErrorMessage ="O campo deve conter 14 caracteres, apenas números")]
-        [CNPJValido]
-        public string CNPJ
-        {
-            get
-            {
-                return this.cnpj;
-            }
-            set
-            {
-                if (TipoPessoa.Equals("Juridica"))
-                {
-                    CNPJ c = value;
-                    if (c.IsValid())
-                        this.cnpj = value;
-                    else
-                        throw new Exception("Valor De CNPJ Inválido");
-                }
-                
-            }
-        }
-
-        
-        [CPFValido]
+        public string CNPJ { get; set; }
+       
+        [StringLength(11,ErrorMessage ="O campo deve conter 11 caracteres, apenas números")]
         public string CPF { get; set; }
-        
 
-        private string ie;
         [MaxLength(14)]
-        public string IE
-        {
-            get { return this.ie; }
-            set
-            {
-                if (!IsentoIE && !String.IsNullOrEmpty(value))
-                {
-                    IE i = new IE(value, Estado.COD_ESTADO);
-                    if (i.IsValid())
-                        this.ie = value;
-                }
-            }
-        }
-
+        public string IE { get; set; }
+       
         public MUNICIPIOS_IBGE Municipio  { get; set; }
 
-        [StringLength(9)]
+        [StringLength(9, ErrorMessage = "O campo deve conter 9 caracteres, apenas números")]
         public string SUFRAMA { get; set; }
 
         [Required(ErrorMessage = "Necessário Informar um Endereço")]

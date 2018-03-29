@@ -188,8 +188,6 @@
     <Compile Include="Services\MunicipioService.cs" />
     <Compile Include="Services\PaisService.cs" />
     <Compile Include="Services\ParticipanteService.cs" />
-    <Compile Include="Validations\CNPJValidoAttribute.cs" />
-    <Compile Include="Validations\CPFValidoAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\CriaBanco.sql" />
