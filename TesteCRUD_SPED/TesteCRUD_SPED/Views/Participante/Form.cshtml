@@ -4,38 +4,53 @@
 {
     @Html.ValidationMessage("model.Invalida")
 
+<div>
     @Html.LabelFor(p => p.Cod_Part, "Codigo do Participante")
     @Html.TextBoxFor(P => P.Cod_Part, new { @class = "form-control" })
     @Html.ValidationMessageFor(P => P.Cod_Part)
+</div>
 
+<div>
     @Html.LabelFor(p => p.Nome, "Nome")
     @Html.TextBoxFor(P => P.Nome, new { @class = "form-control" })
     @Html.ValidationMessageFor(P => P.Nome)
+</div>
 
+<div>
     @Html.LabelFor(p => p.Pais.COD_PAIS, "País")
     @Html.DropDownListFor(p => p.Pais.COD_PAIS,
-          new SelectList(ViewBag.Paises, "COD_PAIS", "NOME_PAIS")                                                               , new { @class = "form-control" })
+                  new SelectList(ViewBag.Paises, "COD_PAIS", "NOME_PAIS"),
+                  new { @class = "form-control" , @id = "pais" })
     @Html.ValidationMessageFor(p => p.Pais.COD_PAIS)
+</div>
 
+<div id="pfpj">
     @Html.LabelFor(p => p.TipoPessoa, "Pessoa Fisica / Juridica")
-    @Html.EnumDropDownListFor(p => p.TipoPessoa, new { @class = "form-control" })
+    @Html.EnumDropDownListFor(p => p.TipoPessoa, new { @class = "form-control" ,@id="pjpf"})
     @Html.ValidationMessageFor(p => p.TipoPessoa)
+</div>
 
+<div id="cpf">
     @Html.LabelFor(p => p.CPF, "CPF")
     @Html.TextBoxFor(P => P.CPF, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.CPF)
+</div>
 
+<div id="cnpj">
     @Html.LabelFor(p => p.CNPJ, "CNPJ")
     @Html.TextBoxFor(P => P.CNPJ, new { @class = "form-control" })
     @Html.ValidationMessageFor(P => P.CNPJ)
+</div>
 
+<div id="estado">
     @Html.LabelFor(p => p.Estado.COD_ESTADO, "Estado")
     @Html.DropDownListFor(p => p.Estado.COD_ESTADO,
-        new SelectList(ViewBag.Estados, "COD_ESTADO", "SIGLA_ESTADO"),
-        new { @class = "form-control" })
+                new SelectList(ViewBag.Estados, "COD_ESTADO", "SIGLA_ESTADO"),
+                new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Estado.COD_ESTADO)
+</div>
 
-
+<div id="ie">
     @Html.LabelFor(p => p.IE, "Inscrição Estadual")
     @Html.TextBoxFor(P => P.IE, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.IE)
@@ -43,37 +58,48 @@
     @Html.LabelFor(p => p.IsentoIE, "Isento")
     @Html.CheckBoxFor(p => p.IsentoIE, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.IsentoIE)
+</div>
 
-
+<div id="suframa">
     @Html.LabelFor(p => p.SUFRAMA, "SUFRAMA")
     @Html.TextBoxFor(P => P.SUFRAMA, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.SUFRAMA)
+</div>
 
-
-
+<div id="municipio">
     @Html.LabelFor(p => p.Municipio.COD_MUNICIPIO, "Municipio")
     @Html.DropDownListFor(p => p.Municipio.COD_MUNICIPIO,
-            new SelectList(ViewBag.Municipios,"COD_MUNICIPIO", "NOME_MUNICIPIO"),
-            new { @class = "form-control" })
+                    new SelectList(ViewBag.Municipios, "COD_MUNICIPIO", "NOME_MUNICIPIO"),
+                    new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Municipio.COD_MUNICIPIO)
+</div>
 
+<div id="bairro">
     @Html.LabelFor(p => p.Bairro, "Bairro")
     @Html.TextBoxFor(P => P.Bairro, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Bairro)
+</div>
 
+<div>
     @Html.LabelFor(p => p.Endereco, "Endereco")
     @Html.TextBoxFor(P => P.Endereco, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Endereco)
+</div>
 
+<div id="numero">
     @Html.LabelFor(p => p.Numero, "Numero")
     @Html.TextBoxFor(P => P.Numero, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Numero)
+</div>
 
+<div id="complemento">
     @Html.LabelFor(p => p.Complemento, "Complemento")
     @Html.TextBoxFor(P => P.Complemento, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Complemento)
-
+</div>
     <input type="submit" value="Salvar" />
 
 }
+
+@Scripts.Render("~/bundles/jquery")
 
