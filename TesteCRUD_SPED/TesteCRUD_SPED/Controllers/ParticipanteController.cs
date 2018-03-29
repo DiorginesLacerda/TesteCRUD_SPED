@@ -6,30 +6,31 @@ using System.Web.Mvc;
 using TesteCRUD_SPED.Entities;
 using TesteCRUD_SPED.Models;
 using TesteCRUD_SPED.Repositories;
+using TesteCRUD_SPED.Services;
 
 namespace TesteCRUD_SPED.Controllers
 {
     public class ParticipanteController : Controller
     {
-        private PaisRepository paisRepository;
-        private EstadoRepository estadoRepository;
-        private MunicipioRepository municipioRepository;
-        private ParticipanteRepository participanteRepository;
+        private PaisService paisService;
+        private EstadoService estadoService;
+        private MunicipioService municipioService;
+        private ParticipanteService participanteService;
 
-        public ParticipanteController(PaisRepository paisRepository, EstadoRepository estadoRepository,
-            MunicipioRepository municipioRepository, ParticipanteRepository participanteRepository)
+        public ParticipanteController(PaisService paisService, EstadoService estadoService,
+            MunicipioService municipioService, ParticipanteService participanteService)
         {
-            this.paisRepository = paisRepository;
-            this.estadoRepository = estadoRepository;
-            this.municipioRepository = municipioRepository;
-            this.participanteRepository = participanteRepository;
+            this.paisService = paisService;
+            this.estadoService = estadoService;
+            this.municipioService = municipioService;
+            this.participanteService = participanteService;
         }
 
         public ActionResult Form()
         {
-            ViewBag.Paises = paisRepository.GetAll().OrderBy(p=>p.NOME_PAIS);
-            ViewBag.Estados = estadoRepository.GetAll().OrderBy(e => e.SIGLA_ESTADO);
-            ViewBag.Municipios = municipioRepository.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
+            ViewBag.Paises = paisService.GetAll().OrderBy(p=>p.NOME_PAIS);
+            ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
+            ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
             return View();
         }
 
@@ -37,37 +38,22 @@ namespace TesteCRUD_SPED.Controllers
         {
             if (ModelState.IsValid)
             {
-                participanteRepository.Add(
-                    new PARTICIPANTE
-                    {
-                        COD_PART = model.Cod_Part.ToString(),
-                        NOME = model.Nome,
-                        COD_PAIS = model.Pais.COD_PAIS,
-                        CNPJ = model.CNPJ,
-                        CPF = model.CPF,
-                        IE = model.IE,
-                        COD_MUN = model.Municipio.COD_MUNICIPIO,
-                        SUFRAMA = model.SUFRAMA,
-                        END = model.Endereco,
-                        NUM = model.Numero.ToString(),
-                        COMPL = model.Complemento,
-                        BAIRRO = model.Bairro
-                    });
+                participanteService.Add(model);
                 return RedirectToAction("Index");
             }
             else
             {
-                ViewBag.Paises = paisRepository.GetAll().OrderBy(p => p.NOME_PAIS);
-                ViewBag.Estados = estadoRepository.GetAll().OrderBy(e => e.SIGLA_ESTADO);
-                ViewBag.Municipios = municipioRepository.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
+                ViewBag.Paises = paisService.GetAll().OrderBy(p => p.NOME_PAIS);
+                ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
+                ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
                 return View("Form", model);
             }
-            
+            //verificar onchange no JavaScript
         }
 
         public ActionResult Index()
         {
-            return View(this.participanteRepository.GetAll());
+            return View(this.participanteService.GetAll());
         }
     }
 }

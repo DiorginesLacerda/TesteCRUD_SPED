@@ -14,5 +14,12 @@
             @RenderBody()
         </main>
     </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquerymascara")
+    @Scripts.Render("~/bundles/toast")
+    @Scripts.Render("~/bundles/datatables")
+    @Scripts.Render("~/Content/datatables")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

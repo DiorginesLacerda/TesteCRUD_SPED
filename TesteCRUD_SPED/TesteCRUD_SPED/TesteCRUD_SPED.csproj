@@ -173,6 +173,7 @@
     <Compile Include="Entities\MUNICIPIOS_IBGE.cs" />
     <Compile Include="Entities\PAISES_IBGE.cs" />
     <Compile Include="Entities\PARTICIPANTE.cs" />
+    <Compile Include="Models\CPFModel.cs" />
     <Compile Include="Models\ParticipanteModel.cs" />
     <Compile Include="Models\TipoPessoaModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -183,6 +184,12 @@
     <Compile Include="Repositories\MunicipioRepository.cs" />
     <Compile Include="Repositories\PaisRepository.cs" />
     <Compile Include="Repositories\ParticipanteRepository.cs" />
+    <Compile Include="Services\EstadoService.cs" />
+    <Compile Include="Services\MunicipioService.cs" />
+    <Compile Include="Services\PaisService.cs" />
+    <Compile Include="Services\ParticipanteService.cs" />
+    <Compile Include="Validations\CNPJValidoAttribute.cs" />
+    <Compile Include="Validations\CPFValidoAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Data\CriaBanco.sql" />
@@ -227,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

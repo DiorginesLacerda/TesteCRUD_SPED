@@ -7,6 +7,6 @@ namespace TesteCRUD_SPED.Models
 {
     public enum TipoPessoaModel
     {
-        Fisica,Juridica
+        Fisica ,Juridica
     }
 }
