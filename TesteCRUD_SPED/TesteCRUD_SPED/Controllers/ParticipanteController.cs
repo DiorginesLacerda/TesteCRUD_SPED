@@ -28,9 +28,7 @@ namespace TesteCRUD_SPED.Controllers
 
         public ActionResult Form()
         {
-            ViewBag.Paises = paisService.GetAll().OrderBy(p=>p.NOME_PAIS);
-            ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
-            ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
+            SetViewBags();
             return View();
         }
 
@@ -43,9 +41,7 @@ namespace TesteCRUD_SPED.Controllers
             }
             else
             {
-                ViewBag.Paises = paisService.GetAll().OrderBy(p => p.NOME_PAIS);
-                ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
-                ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
+                SetViewBags();
                 return View("Form", model);
             }
             //verificar onchange no JavaScript
@@ -54,6 +50,13 @@ namespace TesteCRUD_SPED.Controllers
         public ActionResult Index()
         {
             return View(this.participanteService.GetAll());
+        }
+
+        private void SetViewBags()
+        {
+            ViewBag.Paises = paisService.GetAll().OrderBy(p => p.NOME_PAIS);
+            ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
+            ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
         }
     }
 }
