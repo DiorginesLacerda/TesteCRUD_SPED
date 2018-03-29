@@ -16,6 +16,7 @@ namespace TesteCRUD_SPED.Controllers
         private EstadoService estadoService;
         private MunicipioService municipioService;
         private ParticipanteService participanteService;
+        private TipoPessoaModel tipoPessoa;
 
         public ParticipanteController(PaisService paisService, EstadoService estadoService,
             MunicipioService municipioService, ParticipanteService participanteService)
@@ -24,6 +25,7 @@ namespace TesteCRUD_SPED.Controllers
             this.estadoService = estadoService;
             this.municipioService = municipioService;
             this.participanteService = participanteService;
+            this.tipoPessoa = new TipoPessoaModel();
         }
 
         public ActionResult Form()
@@ -65,6 +67,7 @@ namespace TesteCRUD_SPED.Controllers
 
         private void SetViewBags()
         {
+            ViewBag.TipoPessoa = tipoPessoa.lista;
             ViewBag.Paises = paisService.GetAll().OrderBy(p => p.NOME_PAIS);
             ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
             ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);

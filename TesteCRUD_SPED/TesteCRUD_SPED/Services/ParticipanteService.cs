@@ -61,7 +61,7 @@ namespace TesteCRUD_SPED.Services
             if (model.Pais.COD_PAIS.Equals("1058"))
             {
                 //Verifica se é pessoa Física
-                if (model.TipoPessoa.ToString().Equals("Fisica"))
+                if (model.TipoPessoa.Equals("Fisica"))
                 {
                     //Verifica se o CNPJ está em branco
                     if (!String.IsNullOrEmpty(model.CNPJ))

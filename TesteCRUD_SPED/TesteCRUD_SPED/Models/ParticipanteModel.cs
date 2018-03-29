@@ -22,7 +22,7 @@ namespace TesteCRUD_SPED.Models
 
         public ESTADOS_IBGE Estado { get; set; }
 
-        public TipoPessoaModel TipoPessoa { get; set; }
+        public string TipoPessoa { get; set; }
 
         [StringLength(14,ErrorMessage ="O campo deve conter 14 caracteres, apenas números")]
         public string CNPJ { get; set; }
