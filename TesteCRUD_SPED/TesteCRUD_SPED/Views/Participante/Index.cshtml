@@ -1,0 +1,42 @@
+﻿@model List<TesteCRUD_SPED.Entities.PARTICIPANTE>
+
+@Html.ActionLink("Adicionar Participante","Form")
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>REG</th>
+            <th>COD_PART</th>
+            <th>NOME</th>
+            <th>COD_PAIS</th>
+            <th>CNPJ</th>
+            <th>CPF</th>
+            <th>IE</th>
+            <th>COD_MUN</th>
+            <th>SUFRAMA</th>
+            <th>END</th>
+            <th>NUM</th>
+            <th>COMPL</th>
+            <th>BAIRRO</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var p in Model)
+        {
+            <tr>@p.REG</tr>
+            <tr>@p.COD_PART</tr>
+            <tr>@p.NOME</tr>
+            <tr>@p.COD_PAIS</tr>
+            <tr>@p.CNPJ</tr>
+            <tr>@p.CPF</tr>
+            <tr>@p.IE</tr>
+            <tr>@p.COD_MUN</tr>
+            <tr>@p.SUFRAMA</tr>
+            <tr>@p.END</tr>
+            <tr>@p.NUM</tr>
+            <tr>@p.COMPL</tr>
+            <tr>@p.BAIRRO</tr>
+        }
+    </tbody>
+</table>
+

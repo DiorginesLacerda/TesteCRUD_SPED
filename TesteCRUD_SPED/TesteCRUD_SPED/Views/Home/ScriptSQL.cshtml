@@ -1,0 +1,64 @@
+﻿
+<h2>ScriptSQL</h2>
+<h5>Além deste script também é necessária a incersão dos dados de Paises,Estados e Municipios</h5>
+<h5>O arquivo com todo o script encontra-se na pasta Data</h5>
+
+<div>
+    <p>
+        CREATE DATABASE DB_TESTE_SPED<br />
+        GO<br />
+        <br />
+        CREATE TABLE ESTADOS_IBGE<br />
+        (<br />
+        COD_ESTADO INT NOT NULL,<br />
+        SIGLA_ESTADO VARCHAR(2) not null<br />
+        CONSTRAINT "PK_ESTADO" PRIMARY KEY (COD_ESTADO)<br />
+        )<br />
+        go<br />
+        <br />
+        CREATE TABLE MUNICIPIOS_IBGE<br />
+        (<br />
+        COD_MUNICIPIO CHAR(7) NOT NULL,<br />
+        NOME_MUNICIPIO varchar(100) NOT NULL,<br />
+        COD_ESTADO INT NOT NULL<br />
+        CONSTRAINT "PK_MUNICIPIO" PRIMARY KEY(COD_MUNICIPIO)<br />
+        CONSTRAINT "FK_ESTADO" FOREIGN KEY (COD_ESTADO)<br />
+        REFERENCES ESTADOS_IBGE<br />
+        )<br />
+        go<br />
+        <br />
+        CREATE TABLE PAISES_IBGE<br />
+        (<br />
+        COD_PAIS VARCHAR(5) NOT NULL,<br />
+        NOME_PAIS VARCHAR(60)NOT NULL<br />
+        CONSTRAINT "PK_PAIS" PRIMARY KEY(COD_PAIS)<br />
+        )<br />
+        GO<br />
+        <br />
+        CREATE TABLE PARTICIPANTE<br />
+        (<br />
+        [REG] VARCHAR(4) NOT NULL,<br />
+        [COD_PART] VARCHAR(60) NOT NULL,<br />
+        [NOME] VARCHAR(100) NOT NULL,<br />
+        [COD_PAIS] VARCHAR(5) NOT NULL,<br />
+        [CNPJ] CHAR(14),<br />
+        [CPF] CHAR(11),<br />
+        [IE] VARCHAR(14),<br />
+        [COD_MUN] CHAR(7),<br />
+        [SUFRAMA] CHAR(9),<br />
+        [END] VARCHAR(60) NOT NULL,<br />
+        [NUM] VARCHAR(10),<br />
+        [COMPL] VARCHAR(60),<br />
+        [BAIRRO] VARCHAR(60),<br />
+        CONSTRAINT "PK_PARTICIPANTE" PRIMARY KEY(COD_PART)<br />
+        )<br />
+        GO<br />
+        <br />
+        ALTER TABLE PARTICIPANTE<br />
+        ADD CONSTRAINT "FK_PAIS" FOREIGN KEY(COD_PAIS)<br />
+        REFERENCES PAISES_IBGE(COD_PAIS)<br />
+        GO<br />
+        <br />
+        --Insere dados para as tabelas de Paises, Estados e Municípios
+    </p>
+</div>
