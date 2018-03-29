@@ -10,7 +10,7 @@ A Criação da Tabela busca atender as espeificações descritas em http://sped.
 
 Para a Conexão a um Banco de dados, que tenha sido criado com as regras descritas no Script de criação deste, é necessário mudar a string de conexão
 que encontra-se no arquivo TesteCRUD_SPED/WebConfig, alterando a string colocada dentro de da tag <connectionString><add ...>.
-Ao final do Arquivo há uma string de conexão a um banco já criado, mas necessita ser inserido no campo correto. Esta string aponta para um banco em um provedor em nuvem, específicamente para este teste, e ficará disponível até dia 30/03/2018.
+Ao final do Arquivo há uma string de conexão a um banco já criado, mas necessita ser inserido no campo correto. Esta string aponta para um banco em um provedor em nuvem, específicamente para este teste, e ficará disponível até dia 06/04/2018.
 
 Para a Criação do banco foram criadas 3 tabelas além da tabela PARTICIPANTE, sendo elas: ESTADOS_IBGE, MUNICIPIOS_IBGE E PAISES_IBGE. Para estas 3 tabelas
 no próprio Script de criação do bando já há a carga de dados para elas, e esta não pode deixar de ser feita, pois seu conteúdo é necessários para validações. O conteúdo destas tabelas foi obttido a partir de(http://www.sped.fazenda.gov.br/spedtabelas/AppConsulta/publico/aspx/ConsultaTabelasExternas.aspx?CodSistema=SpedFiscal) na data de 26/03/2018
