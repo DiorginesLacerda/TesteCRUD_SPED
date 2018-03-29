@@ -17,7 +17,24 @@ var complemento = $("#complemento")
 
 $(document).ready(function () {
     pais.val('1058')
-    pjpf
+    pjpf.val('Juridica')
+    cpf.hide()
+    pjpf.on('change', function () {
+        if (pjpf.val('Juridica')) {
+            cpf.hide()
+            cnpj.show()
+            estado.show()
+            ie.show()
+            suframa.show()
+        }
+        if (pjpf.val('Juridica')) {
+            cpf.show()
+            cnpj.hide()
+            estado.hide()
+            ie.hide()
+            suframa.hide()
+        }
+    })
 
     pais.on("change", function () {
         if (pais.val() != '1058') {

@@ -26,7 +26,9 @@
 
 <div id="pfpj">
     @Html.LabelFor(p => p.TipoPessoa, "Pessoa Fisica / Juridica")
-    @Html.EnumDropDownListFor(p => p.TipoPessoa, new { @class = "form-control" ,@id="pjpf"})
+    @Html.DropDownListFor(p => p.TipoPessoa,
+    new SelectList(ViewBag.tipoPessoa),
+    new { @class = "form-control" ,@id="pjpf"})
     @Html.ValidationMessageFor(p => p.TipoPessoa)
 </div>
 

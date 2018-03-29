@@ -12,6 +12,9 @@ namespace TesteCRUD_SPED
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/jqueryform_participante.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/local").Include(
+                        "~/Scripts/jqueryhome.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 

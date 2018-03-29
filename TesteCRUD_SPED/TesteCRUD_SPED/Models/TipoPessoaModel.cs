@@ -5,8 +5,10 @@ using System.Web;
 
 namespace TesteCRUD_SPED.Models
 {
-    public enum TipoPessoaModel
+    public class TipoPessoaModel
     {
-         Juridica,Fisica
+        public List<string> lista = new List<string> { "Juridica", "Fisica" };
+
+        
     }
 }
