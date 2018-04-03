@@ -71,7 +71,7 @@
 <div id="div_municipio" >
     @Html.LabelFor(p => p.Municipio.COD_MUNICIPIO, "Municipio")
     @Html.DropDownListFor(p => p.Municipio.COD_MUNICIPIO,
-                    new SelectList(ViewBag.Municipios, "COD_MUNICIPIO", "NOME_MUNICIPIO"),
+                    new SelectList(ViewBag.Municipios, "CodMunicipio", "NomeMunicipio"),
                     new { @class = "form-control", @id = "municipio" })
     @Html.ValidationMessageFor(p => p.Municipio.COD_MUNICIPIO)
 </div>

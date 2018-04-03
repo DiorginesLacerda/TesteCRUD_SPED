@@ -1,6 +1,5 @@
 ﻿
 var pais = $('#pais')
-
 var pfpj = $("#pfpj")
 var pjpf = $("#pjpf")
 var divcpf = $("#divcpf")
@@ -19,15 +18,16 @@ var municipio = $("#municipio")
 var bairro = $("#bairro")
 var numero = $("#numero")
 var complemento = $("#complemento")
-var municipios = $("@ViewBag.Municipios")
 
 
 
-$(document).ready(function () {
-    iniciaValores();
-    
+
+$(function () {
+    iniciaValores()
+
     validaPais()
     validaPessoa()
+    filtraMunicipios()
     validaIsentoIE()
 })
 
@@ -37,17 +37,36 @@ function validaPessoa() {
     })
 }
 
-
-
 function iniciaValores() {
     pais.val('1058');
     pjpf.val("Juridica");
     divcpf.hide();
     estado.val('');
+    municipio.val('')
 }
 
-function filtraMunicipios(id) {
+function filtraMunicipios() {
+    estado.change(() => { 
+    var id = estado.val()
+    console.log(id)
+    var url = "/Participante/GetMunicipios"
+    var dados = { cod_estado: id }
+    $.get(url, dados, atualizaMunicipios)
+    })
+}
 
+function atualizaMunicipios(data) {
+    console.log(data)
+    municipio.empty()
+
+    $(data).each(function () {
+        var d = $(this)[0]
+        municipio.append(new Option(d.NomeMunicipio, d.CodMunicipio,))
+    })
+}
+
+function criaOption(value,text) {
+    var option = $("<opttion>")
 }
 
 function validaIsentoIE() {
@@ -72,9 +91,6 @@ function validaPais() {
         }
     })
 }
-    
-
-
 
 function mostraPJ() {
     

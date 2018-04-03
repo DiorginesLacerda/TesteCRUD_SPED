@@ -19,5 +19,10 @@ namespace TesteCRUD_SPED.Repositories
         {
             return this.context.Municipios.ToList();
         }
+
+        public IList<MUNICIPIOS_IBGE> GetMunicipiosByEstado(int idEstado)
+        {
+            return this.context.Municipios.Where(m => m.COD_ESTADO == idEstado).ToList();
+        }
     }
 }

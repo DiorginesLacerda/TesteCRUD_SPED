@@ -70,7 +70,13 @@ namespace TesteCRUD_SPED.Controllers
             ViewBag.TipoPessoa = tipoPessoa.lista;
             ViewBag.Paises = paisService.GetAll().OrderBy(p => p.NOME_PAIS);
             ViewBag.Estados = estadoService.GetAll().OrderBy(e => e.SIGLA_ESTADO);
-            ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NOME_MUNICIPIO);
+            ViewBag.Municipios = municipioService.GetAll().OrderBy(m => m.NomeMunicipio);
+        }
+
+        public JsonResult GetMunicipios(int cod_estado)
+        {
+            var value = municipioService.GetMunicipiosByEstado(cod_estado);
+            return Json(value,JsonRequestBehavior.AllowGet);
         }
     }
 }

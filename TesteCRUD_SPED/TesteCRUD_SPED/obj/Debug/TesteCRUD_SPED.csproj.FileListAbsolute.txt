@@ -203,3 +203,9 @@ C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.A
 C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.WindowsServer.xml
 C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\Microsoft.AI.Web.xml
 C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\obj\Debug\TesteCRUD_SPED.csproj.CopyComplete
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Net.Http.Formatting.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Http.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Http.WebHost.dll
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Net.Http.Formatting.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Http.xml
+C:\Teste DecisionIT\TesteCRUD_SPED\TesteCRUD_SPED\TesteCRUD_SPED\bin\System.Web.Http.WebHost.xml
