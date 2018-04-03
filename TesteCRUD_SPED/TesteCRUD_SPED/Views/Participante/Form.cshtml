@@ -24,7 +24,7 @@
     @Html.ValidationMessageFor(p => p.Pais.COD_PAIS)
 </div>
 
-<div id="pfpj">
+<div  id="pfpj">
     @Html.LabelFor(p => p.TipoPessoa, "Pessoa Fisica / Juridica")
     @Html.DropDownListFor(p => p.TipoPessoa,
     new SelectList(ViewBag.tipoPessoa),
@@ -32,51 +32,51 @@
     @Html.ValidationMessageFor(p => p.TipoPessoa)
 </div>
 
-<div id="cpf">
+<div  id="divcpf">
     @Html.LabelFor(p => p.CPF, "CPF")
-    @Html.TextBoxFor(P => P.CPF, new { @class = "form-control" })
+    @Html.TextBoxFor(P => P.CPF, new { @class = "form-control",@id="cpf" })
     @Html.ValidationMessageFor(p => p.CPF)
 </div>
 
-<div id="cnpj">
+<div id="div_cnpj" >
     @Html.LabelFor(p => p.CNPJ, "CNPJ")
-    @Html.TextBoxFor(P => P.CNPJ, new { @class = "form-control" })
+    @Html.TextBoxFor(P => P.CNPJ, new { @class = "form-control" ,@id="cnpj" })
     @Html.ValidationMessageFor(P => P.CNPJ)
 </div>
 
-<div id="estado">
+<div id="div_estado" >
     @Html.LabelFor(p => p.Estado.COD_ESTADO, "Estado")
     @Html.DropDownListFor(p => p.Estado.COD_ESTADO,
                 new SelectList(ViewBag.Estados, "COD_ESTADO", "SIGLA_ESTADO"),
-                new { @class = "form-control" })
+                new { @class = "form-control" ,@id = "estado"})
     @Html.ValidationMessageFor(p => p.Estado.COD_ESTADO)
 </div>
 
-<div id="ie">
+<div id="div_ie" >
     @Html.LabelFor(p => p.IE, "Inscrição Estadual")
-    @Html.TextBoxFor(P => P.IE, new { @class = "form-control" })
+    @Html.TextBoxFor(P => P.IE, new { @class = "form-control", @id = "ie" })
     @Html.ValidationMessageFor(p => p.IE)
 
     @Html.LabelFor(p => p.IsentoIE, "Isento")
-    @Html.CheckBoxFor(p => p.IsentoIE, new { @class = "form-control" })
+    @Html.CheckBoxFor(p => p.IsentoIE, new { @class = "form-control", @id = "isentoIE"})
     @Html.ValidationMessageFor(p => p.IsentoIE)
 </div>
 
-<div id="suframa">
+<div id="div_suframa" >
     @Html.LabelFor(p => p.SUFRAMA, "SUFRAMA")
-    @Html.TextBoxFor(P => P.SUFRAMA, new { @class = "form-control" })
+    @Html.TextBoxFor(P => P.SUFRAMA, new { @class = "form-control" , @id = "suframa" })
     @Html.ValidationMessageFor(p => p.SUFRAMA)
 </div>
 
-<div id="municipio">
+<div id="div_municipio" >
     @Html.LabelFor(p => p.Municipio.COD_MUNICIPIO, "Municipio")
     @Html.DropDownListFor(p => p.Municipio.COD_MUNICIPIO,
                     new SelectList(ViewBag.Municipios, "COD_MUNICIPIO", "NOME_MUNICIPIO"),
-                    new { @class = "form-control" })
+                    new { @class = "form-control", @id = "municipio" })
     @Html.ValidationMessageFor(p => p.Municipio.COD_MUNICIPIO)
 </div>
 
-<div id="bairro">
+<div id="bairro" >
     @Html.LabelFor(p => p.Bairro, "Bairro")
     @Html.TextBoxFor(P => P.Bairro, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Bairro)
@@ -88,13 +88,13 @@
     @Html.ValidationMessageFor(p => p.Endereco)
 </div>
 
-<div id="numero">
+<div id="numero" >
     @Html.LabelFor(p => p.Numero, "Numero")
     @Html.TextBoxFor(P => P.Numero, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Numero)
 </div>
 
-<div id="complemento">
+<div id="complemento" >
     @Html.LabelFor(p => p.Complemento, "Complemento")
     @Html.TextBoxFor(P => P.Complemento, new { @class = "form-control" })
     @Html.ValidationMessageFor(p => p.Complemento)

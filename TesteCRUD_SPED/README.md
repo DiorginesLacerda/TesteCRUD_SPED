@@ -17,7 +17,7 @@ no próprio Script de criação do bando já há a carga de dados para elas, e e
 
 
 Descrição de Campos e respectivas validações
-Apenas serão declarados aqui os campos que tenham algum tratamento especial
+
 
 Campo 01 - REG: Por tratar-se de um campo de conteúdo estático para todos os registros, ele não consta na tela, e seu conteúdo é a ele atribuido na definição da Entidade a ele atribuída.
 
@@ -43,11 +43,18 @@ Campo 11 = NUM
 Campo 12 = COMPL
 Campo 13 = BAIRRO
 
+As validações foram feitas em duas etapas
+- Para os campos sempre validados fram validados na ParticipanteModel
+- tamanho dos campos foram todos validados na ParticipanteModel
+- Validações mais complexas doram feitas na classe Service
+
 Implementações que ainda necessitam ser feitas:
 - Aplicação de máscaras nos campos do Formulário
 - Melhorias no CSS
-- Funções no JavaScript para Apenas abilitasse os campos respectivos aos código de Pais Brasil apenas quando ele selecionado
-- funçoes no JavaScript que permitissem apenas a inserção do CPF ou CNPJ
+- Refinar Funções no JavaScript
+- Refatorar o Método IsModelValid (Services/Participante) para melhorar a manutenabilidade
+- Criação de Testes Automatizados
+- Busca da validação do SUFRAMA
 
 
 
