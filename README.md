@@ -49,9 +49,7 @@ As validações foram feitas em duas etapas
 - Validações mais complexas doram feitas na classe Service
 
 Implementações que ainda necessitam ser feitas:
-- Aplicação de máscaras nos campos do Formulário
 - Melhorias no CSS
-- Refinar Funções no JavaScript
 - Refatorar o Método IsModelValid (Services/Participante) para melhorar a manutenabilidade
 - Criação de Testes Automatizados
 - Busca da validação do SUFRAMA

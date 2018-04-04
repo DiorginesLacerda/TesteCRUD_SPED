@@ -24,12 +24,47 @@ var complemento = $("#complemento")
 
 $(function () {
     iniciaValores()
-
     validaPais()
     validaPessoa()
     filtraMunicipios()
     validaIsentoIE()
+
+    cpf.mask('999.999.999-99')
+    cnpj.mask('99.999.999/9999-99')
 })
+
+function aplicaMascaraIE() {
+    //validar máximo 14 números
+    /*
+     1    RS    RIO GRANDE DO SUL    ###-#######
+2    SC    SANTA CATARINA            ###.###.###
+3    PR    PARANÁ                    ########-##
+4    SP    SÃO PAULO                ###.###.###.###
+5    MG    MINAS GERAIS            ###.###.###/####
+6    RJ    RIO DE JANEIRO            ##.###.##-#
+7    ES    ESPÍRITO SANTO        ###.###.##-#
+8    BA    BAHIA                    ###.###.##-#
+9    SE    SERGIPE                #########-#
+10    AL    ALAGOAS                #########
+11    PE    PERNAMBUCO            ##.#.###.#######-#
+12    PB    PARAÍBA                    ########-#
+13    RN    RIO GRANDE DO NORTE    ##.###.###-#
+14    PI    PIAUÍ                    #########
+15    MA    MARANHÃO                #########
+16    CE    CEARÁ                    ########-#
+17    GO    GOIÁS                    ##.###.###-#
+18    TO    TOCANTINS                ###########
+19    MT    MATO GROSSO            #########
+20    MS    MATO GROSSO DO SUL    #########
+21    DF    DISTRITO FEDERAL        ###########-##
+22    AM    AMAZONAS                ##.###.###-#
+23    AC    ACRE                    ##.###.###/###-##
+24    PA    PARÁ                    ##-######-#
+25    RO    RONDÔNIA                ###.#####-#
+26    RR    RORAIMA                ########-#
+27    AP    AMAPÁ                    #########
+     */
+}
 
 function validaPessoa() {
     pjpf.on("change", function () {

@@ -10,6 +10,7 @@ namespace TesteCRUD_SPED
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery.maskedinput.js",
                         "~/Scripts/jqueryform_participante.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/local").Include(
