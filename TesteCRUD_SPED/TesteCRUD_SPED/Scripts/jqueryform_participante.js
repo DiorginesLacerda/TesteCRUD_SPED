@@ -26,45 +26,13 @@ $(function () {
     iniciaValores()
     validaPais()
     validaPessoa()
-    filtraMunicipios()
-    validaIsentoIE()
-
-    cpf.mask('999.999.999-99')
-    cnpj.mask('99.999.999/9999-99')
+    validaTipoPessoa()
+    manipulaEstado()
+    checaIsentoIE()
+    
 })
 
-function aplicaMascaraIE() {
-    //validar máximo 14 números
-    /*
-     1    RS    RIO GRANDE DO SUL    ###-#######
-2    SC    SANTA CATARINA            ###.###.###
-3    PR    PARANÁ                    ########-##
-4    SP    SÃO PAULO                ###.###.###.###
-5    MG    MINAS GERAIS            ###.###.###/####
-6    RJ    RIO DE JANEIRO            ##.###.##-#
-7    ES    ESPÍRITO SANTO        ###.###.##-#
-8    BA    BAHIA                    ###.###.##-#
-9    SE    SERGIPE                #########-#
-10    AL    ALAGOAS                #########
-11    PE    PERNAMBUCO            ##.#.###.#######-#
-12    PB    PARAÍBA                    ########-#
-13    RN    RIO GRANDE DO NORTE    ##.###.###-#
-14    PI    PIAUÍ                    #########
-15    MA    MARANHÃO                #########
-16    CE    CEARÁ                    ########-#
-17    GO    GOIÁS                    ##.###.###-#
-18    TO    TOCANTINS                ###########
-19    MT    MATO GROSSO            #########
-20    MS    MATO GROSSO DO SUL    #########
-21    DF    DISTRITO FEDERAL        ###########-##
-22    AM    AMAZONAS                ##.###.###-#
-23    AC    ACRE                    ##.###.###/###-##
-24    PA    PARÁ                    ##-######-#
-25    RO    RONDÔNIA                ###.#####-#
-26    RR    RORAIMA                ########-#
-27    AP    AMAPÁ                    #########
-     */
-}
+
 
 function validaPessoa() {
     pjpf.on("change", function () {
@@ -78,41 +46,65 @@ function iniciaValores() {
     divcpf.hide();
     estado.val('');
     municipio.val('')
+    ie.prop("disabled", true)
 }
 
-function filtraMunicipios() {
-    estado.change(() => { 
+function manipulaEstado() {
+    estado.change(() => {
+        atualizaMunicipios()
+        if (pjpf.val() == "Juridica")
+            validaIsentoIE()
+    })
+}
+
+function atualizaMunicipios() {
+    
+    municipio.empty()
     var id = estado.val()
-    console.log(id)
     var url = "/Participante/GetMunicipios"
     var dados = { cod_estado: id }
-    $.get(url, dados, atualizaMunicipios)
+    $.get(url, dados, (data)=> {
+        $(data).each(function () {
+            var d = $(this)[0]
+            municipio.append(new Option(d.NomeMunicipio, d.CodMunicipio, ))
+        })
     })
-}
 
-function atualizaMunicipios(data) {
-    console.log(data)
-    municipio.empty()
-
-    $(data).each(function () {
-        var d = $(this)[0]
-        municipio.append(new Option(d.NomeMunicipio, d.CodMunicipio,))
-    })
+    
+    
 }
 
 function criaOption(value,text) {
     var option = $("<opttion>")
 }
 
-function validaIsentoIE() {
+function checaIsentoIE() {
     isentoIE.on("click", function () {
-        if (isentoIE.is(':checked')) {
-            ie.val('')
-            ie.prop("disabled", true)
-        } else {
-            ie.prop("disabled", false)
-        }
+        validaIsentoIE()
     })
+}
+
+function validaIsentoIE() {
+    if (isentoIE.is(':checked')) {
+        ie.val('')
+        ie.prop("disabled", true)
+    } else {
+        if (estado.val() != null) {
+            console.log(estado.val())
+            ie.prop("disabled", false)
+            aplicaMaskIe()
+        }
+        else {
+            alert("Selecione um estado")
+        }
+        
+    }
+}
+
+function aplicaMaskIe() {
+    var uf = Number(estado.val())
+    var mascara = getMaskIE(uf)
+    ie.mask(mascara)
 }
 
 function validaPais() {
@@ -128,17 +120,16 @@ function validaPais() {
 }
 
 function mostraPJ() {
-    
+    cnpj.mask('99.999.999/9999-99')
     divcpf.hide()
     cpf.val('')
     div_cnpj.show()
     div_ie.show()
     div_suframa.show()
-    
 }
 
 function mostraPF() {
-    
+    cpf.mask('999.999.999-99')
     divcpf.show()
     div_cnpj.hide()
     cnpj.val('')
@@ -146,7 +137,6 @@ function mostraPF() {
     ie.val('')
     div_suframa.hide()
     suframa.val('')
-    
 }
 
 function escondeBR() {
@@ -164,11 +154,8 @@ function escondeBR() {
     div_municipio.hide()
     municipio.val('')
     bairro.hide()
-
     numero.hide()
-
     complemento.hide()
-
 }
 
 function mostraBR() {
