@@ -12,7 +12,7 @@ var div_ie = $("#div_ie")
 var ie = $("#ie")
 var isentoIE = $("#isentoIE")
 var div_suframa = $("#div_suframa")
-var suframa = ("#suframa")
+var suframa = $("#suframa")
 var div_municipio =$("#div_municipio")
 var municipio = $("#municipio")
 var bairro = $("#bairro")
@@ -29,7 +29,6 @@ $(function () {
     validaTipoPessoa()
     manipulaEstado()
     checaIsentoIE()
-    
 })
 
 
@@ -41,10 +40,10 @@ function validaPessoa() {
 }
 
 function iniciaValores() {
-    pais.val('1058');
-    pjpf.val("Juridica");
-    divcpf.hide();
-    estado.val('');
+    pais.val('1058')
+    pjpf.val("Juridica")
+    divcpf.hide()
+    estado.val('')
     municipio.val('')
     ie.prop("disabled", true)
 }
@@ -52,13 +51,14 @@ function iniciaValores() {
 function manipulaEstado() {
     estado.change(() => {
         atualizaMunicipios()
-        if (pjpf.val() == "Juridica")
+        if (pjpf.val() == "Juridica") {
             validaIsentoIE()
+            manipulaSuframa()
+        }
     })
 }
 
-function atualizaMunicipios() {
-    
+function atualizaMunicipios() { 
     municipio.empty()
     var id = estado.val()
     var url = "/Participante/GetMunicipios"
@@ -69,13 +69,6 @@ function atualizaMunicipios() {
             municipio.append(new Option(d.NomeMunicipio, d.CodMunicipio, ))
         })
     })
-
-    
-    
-}
-
-function criaOption(value,text) {
-    var option = $("<opttion>")
 }
 
 function checaIsentoIE() {
@@ -90,14 +83,12 @@ function validaIsentoIE() {
         ie.prop("disabled", true)
     } else {
         if (estado.val() != null) {
-            console.log(estado.val())
             ie.prop("disabled", false)
             aplicaMaskIe()
         }
         else {
             alert("Selecione um estado")
-        }
-        
+        } 
     }
 }
 
@@ -125,7 +116,18 @@ function mostraPJ() {
     cpf.val('')
     div_cnpj.show()
     div_ie.show()
-    div_suframa.show()
+    manipulaSuframa()
+}
+
+function manipulaSuframa() {
+    if (estado.val() == 13) {
+        div_suframa.show()
+        suframa.mask("999999999")
+    }
+    else {
+        div_suframa.hide()
+        suframa.val('')
+    }
 }
 
 function mostraPF() {
